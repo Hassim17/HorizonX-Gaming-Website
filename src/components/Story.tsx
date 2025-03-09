@@ -1,4 +1,4 @@
-import React, { MouseEvent, useRef } from "react";
+import { MouseEvent, useRef } from "react";
 import AnimatedTitle from "./AnimatedTitle";
 import gsap from "gsap";
 import RoundedCorners from "./RoundedCorners";

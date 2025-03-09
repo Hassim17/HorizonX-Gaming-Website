@@ -1,5 +1,4 @@
 import { ReactNode } from "react";
-import { IconType } from "react-icons";
 
 const Button = ({
 	title,
@@ -24,6 +23,8 @@ const Button = ({
 			<span className="relative inline-flex overflow-hidden font-general text-xs uppercase">
 				<div>{title}</div>
 			</span>
+
+			{rightIcon}
 		</button>
 	);
 };
