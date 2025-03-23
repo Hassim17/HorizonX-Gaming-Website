@@ -72,10 +72,10 @@ const Hero = () => {
 
 	useGSAP(() => {
 		gsap.set("#video-frame", {
-			clipPath: "polygon(32% 0%, 81% 0, 94% 90%, 0 100%, 0 70%)",
+			clipPath: "polygon(38% 0%, 81% 0, 94% 90%, 0 100%, 0 70%)",
 			// clipPath: "polygon(21% 0, 80% 0, 90% 84%, 0 100%, 0 70%)",
 			borderRadius: "0 0 0% 0%",
-			marginLeft: "-2rem",
+			// marginLeft: "-2rem",
 		});
 
 		gsap.from("#video-frame", {
@@ -87,7 +87,7 @@ const Hero = () => {
 			scrollTrigger: {
 				trigger: "#video-frame",
 				start: "center center",
-				end: "bottom center",
+				end: "+=1000",
 				scrub: true,
 			},
 		});
@@ -175,7 +175,7 @@ const Hero = () => {
 				</div>
 			</div>
 
-			<h1 className="special-font hero-heading absolute bottom-5 right-5 text-black">
+			<h1 className="special-font hero-heading absolute bottom-5 right-5 text-black ">
 				G<b>a</b>ming
 			</h1>
 		</div>

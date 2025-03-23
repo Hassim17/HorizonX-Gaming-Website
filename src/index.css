@@ -65,6 +65,11 @@ body {
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
+@utility mask-clip-path-about {
+	clip-path: polygon(10% 0, 85% 16%, 100% 71%, 10% 82%);
+	transform: translate3d(0, 0, 0) rotateX(0) rotateY(0) rotateZ(0) scale(1);
+}
+
 /* @referance "./App.css"; */
 
 @utility hero-heading {
@@ -72,11 +77,11 @@ body {
 }
 
 @utility about-subtext {
-	@apply absolute bottom-[-80dvh] left-1/2 w-full max-w-96 -translate-x-1/2 text-center font-circular-web text-lg md:max-w-[34rem];
+	@apply absolute bottom-[-95dvh] left-1/2 w-full max-w-96 -translate-x-1/2 text-center font-circular-web text-lg md:max-w-[34rem];
 }
 
 @utility about-image {
-	@apply absolute left-1/2 top-0 z-20 h-[60vh] w-96 origin-center -translate-x-1/2 overflow-hidden rounded-3xl md:w-[30vw];
+	@apply absolute left-1/2 top-0 z-20 h-screen w-screen origin-center -translate-x-1/2 overflow-hidden rounded-3xl md:w-[30vw];
 }
 
 @utility animated-title {
